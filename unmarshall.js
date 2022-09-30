@@ -2,7 +2,7 @@ const { unmarshall } = require("@aws-sdk/util-dynamodb");
 const fs = require("fs");
 
 // change this to the json exported from Amazon DynamoDB
-const dynamo_json = require("./establishment-service-dev.json");
+const dynamo_json = require("./<INSERT_EXPORTED_JSON_FILE_NAME_HERE>.json");
 
 let Items = [];
 
@@ -20,7 +20,7 @@ console.log("Successfully extracted " + Items.length + " items");
 const to_regular_json = { Items };
 
 fs.writeFile(
-  "./establishment-service-unmarshalled.json", // change to desired export file name
+  "./<INSERT_DESIRED_EXPORT_FILE_NAME_HERE>-unmarshalled.json", // change to desired export file name
   JSON.stringify(to_regular_json),
   (error) => {
     if (error) {
