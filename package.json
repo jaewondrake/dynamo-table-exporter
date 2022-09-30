@@ -1,0 +1,15 @@
+{
+  "name": "dynamo_table_exports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "unmarshall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/util-dynamodb": "^3.181.0",
+    "aws-sdk": "^2.1226.0"
+  }
+}
